@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Web Modeler" exporterVersion="1162e15" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.10.0">
+  <bpmn:process id="Process_0gzbuux" name="Prozess im Folder" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_1" name="Start im Folder">
+      <bpmn:outgoing>Flow_053p46l</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:endEvent id="Event_1sdy9xm" name="Ende im Folder">
+      <bpmn:incoming>Flow_0vorkzh</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_053p46l" sourceRef="StartEvent_1" targetRef="Activity_17bvhts" />
+    <bpmn:task id="Activity_17bvhts" name="Task im Folder">
+      <bpmn:incoming>Flow_053p46l</bpmn:incoming>
+      <bpmn:outgoing>Flow_0vorkzh</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_0vorkzh" sourceRef="Activity_17bvhts" targetRef="Event_1sdy9xm" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_0gzbuux">
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="150" y="100" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="132" y="143" width="73" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1sdy9xm_di" bpmnElement="Event_1sdy9xm">
+        <dc:Bounds x="482" y="100" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="463" y="143" width="75" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_17bvhts_di" bpmnElement="Activity_17bvhts">
+        <dc:Bounds x="280" y="78" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_053p46l_di" bpmnElement="Flow_053p46l">
+        <di:waypoint x="186" y="118" />
+        <di:waypoint x="280" y="118" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0vorkzh_di" bpmnElement="Flow_0vorkzh">
+        <di:waypoint x="380" y="118" />
+        <di:waypoint x="482" y="118" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
