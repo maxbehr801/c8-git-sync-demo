@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_0sg49gu" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Web Modeler" exporterVersion="1162e15" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.10.0">
+  <decision id="Decision_0ksppu8" name="Jahreszeitentemperaturen">
+    <decisionTable id="DecisionTable_0iipj3a">
+      <input id="Input_1" label="Jahreszeit">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text>jahreszeit</text>
+        </inputExpression>
+        <inputValues id="UnaryTests_17vr9ky">
+          <text>"Winter","Frühling","Sommer","Herbst"</text>
+        </inputValues>
+      </input>
+      <output id="Output_1" label="gefühlte Temperatur" name="gefuehlteTemperatur" typeRef="string">
+        <outputValues id="UnaryTests_0888jgp">
+          <text>"viel zu kalt","viel zu warm"</text>
+        </outputValues>
+      </output>
+      <rule id="DecisionRule_0cx4bex">
+        <inputEntry id="UnaryTests_0dahlpv">
+          <text>"Winter","Frühling","Herbst"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0y7l295">
+          <text>"viel zu kalt"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1y8ad4e">
+        <inputEntry id="UnaryTests_0av3pnt">
+          <text>"Sommer"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0d03h9v">
+          <text>"viel zu warm"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="Decision_0ksppu8">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
