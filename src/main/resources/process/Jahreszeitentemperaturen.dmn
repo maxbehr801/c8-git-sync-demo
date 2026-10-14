@@ -31,6 +31,14 @@
           <text>"viel zu warm"</text>
         </outputEntry>
       </rule>
+      <rule id="DecisionRule_0ykxf0w">
+        <inputEntry id="UnaryTests_1c9omxs">
+          <text>"Fasnet", "Karneval", "Fasching"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0aaqpwt">
+          <text>"ganz viel zu kalt"</text>
+        </outputEntry>
+      </rule>
     </decisionTable>
   </decision>
   <dmndi:DMNDI>
