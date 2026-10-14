@@ -36,7 +36,7 @@
           <text>"Fasnet", "Karneval", "Fasching"</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0aaqpwt">
-          <text>"ganz viel zu kalt"</text>
+          <text>"eigentlich schon zu kalt"</text>
         </outputEntry>
       </rule>
     </decisionTable>
